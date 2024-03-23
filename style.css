@@ -71,7 +71,7 @@ span {
 
 /* spinner */
 .spinner-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -82,6 +82,7 @@ span {
   align-items: center;
   transition: all 1s;
   z-index: 300;
+  overflow: hidden;
 }
 
 .display .spinner-container {
@@ -508,6 +509,10 @@ span {
   height: 250px;
 }
 
+.project-card h3{
+  text-align: center;
+}
+
 .project-image {
   background-color: black;
   width: 200px;
@@ -752,6 +757,11 @@ span {
   .wrap-center {
     flex-direction: column;
   }
+
+  .project-card-big{
+    height: 270px;
+  }
+
   .button-live {
     margin-bottom: 5px;
   }
