@@ -33,6 +33,30 @@ html {
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* Width and height for scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f9efe7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffe872;
+  border-radius: 6px;
+  transition: background 0.5s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1d1d1d;
+}
+
 h1 {
   /* margin-bottom: 20px; */
   margin-top: 0px;
@@ -230,49 +254,6 @@ span {
   }
 }
 
-/* .button-wrap {
-  display: table;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  font-size: 18px;
-  line-height: 32px;
-} */
-
-/* .btn {
-  min-width: 200px;
-  padding: 11px 32px 12px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #000;
-  background-color: #000;
-  box-shadow: 0 0 0 3px #000;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  color: white;
-  font-family: "Mulish", sans-serif;
-}
-
-.btn-drop {
-  margin-top: 10%;
-  background: #101d2c;
-  padding: 20px;
-  transition: all 0.3s ease-in-out 0s;
-  left: 0px;
-  top: 0px;
-  width: 180px;
-} */
-
-/* .btn-drop:hover {
-  left: 4px;
-  top: 4px;
-  box-shadow: #feae00 0px 0px 0px 0px;
-} */
-
-/* CSS */
 .button-50 {
   background-color: var(--black-color);
   background-image: none;
@@ -303,7 +284,6 @@ span {
 
 .button-50:active {
   box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-
   outline: none;
 }
 
@@ -501,12 +481,12 @@ span {
 }
 .project-card {
   background-color: var(--white-color);
-  /* box-shadow: 6px 4px 0px var(--black-color); */
   border: 0.1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 250px;
+  transition: all 3s ease;
 }
 
 .project-card h3{
@@ -687,10 +667,10 @@ span {
   text-decoration: none;
   cursor: pointer;
   transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
 }
 
 .socials-links:hover {
-  perspective: none;
   transform: scale3d(1.2, 1.2, 0.9);
 }
 
